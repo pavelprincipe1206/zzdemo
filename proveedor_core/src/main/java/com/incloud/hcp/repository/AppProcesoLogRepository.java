@@ -32,6 +32,7 @@ public interface AppProcesoLogRepository extends JPACustomRepository<AppProcesoL
 
         Page<AppProcesoLog> page = this.findAll(Example.of(probe, matcher), PageRequest.of(0, maxResults));
         return page.getContent();
+        //dsaf
     }
 
 }
